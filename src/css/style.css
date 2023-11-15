@@ -22,14 +22,127 @@ to help you out.
 	--size-xl: 1200px;
 */
 
-h1 {
-	color: var(--color-primary);
-}
 
 /* This uses the same value as --size-xs. */
-@media screen and (width >= 320px) {
+@media screen and (width >=320px) {
 	.content-container {
 		margin: 0 auto;
 		max-width: 768px;
+	}
+}
+
+
+/*Start here*/
+* {
+	* {
+		box-sizing: border-box;
+		padding: 0;
+		margin: 0;
+		outline: none;
+	}
+
+	body {
+		display: flex;
+	}
+
+	.wheel {
+		position: relative;
+		height: 500px;
+		width: 500px;
+	}
+
+	.wheel: afrer {
+		position: absolute;
+		content: "";
+		width: 32px;
+		height: 32px;
+		background: url(img/arrow.png) no-repeat;
+		background-size: 32px;
+		right: -30px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+
+	.S1 {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		border-radius: 50%;
+		border: 8px solid black;
+		overflow: hidden;
+		transition: all ease 5s;
+	}
+
+	span {
+		width: 50%;
+		height: 50%;
+		display: inline-block;
+		position: absolute;
+		overflow: hidden;
+	}
+
+	.spa {
+		clip-path: polygon(0 92%, 100% 50%, 0 8%);
+		background-color: green;
+		top: 120px;
+		left: 0px;
+	}
+
+	.spb {
+		clip-path: polygon(100% 92%, 0 50%, 100% 8%);
+		background-color: orange;
+		top: 120px;
+		right: 0px;
+	}
+
+	.spc {
+		clip-path: polygon(50% 0%, 8% 100%, 92% 100%);
+		background-color: red;
+		left: 120px;
+		bottom: 0px;
+	}
+
+	.spd {
+		clip-path: polygon(50% 100%, 92% 0, 8% 0);
+		background-color: blue;
+		left: 120px;
+	}
+
+	.S2 {
+		width: 100%;
+		height: 100%;
+		transform: rotate(-136deg);
+	}
+
+	span strong {
+		width: 65px;
+		height: 65px;
+		line-height: 65px;
+		font-size: 24px;
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+	}
+
+
+	.rotatewheel {
+		position: absolute;
+		top: 50% left:50% transform: translate(-50%, -50%);
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		border: 4px solid gray;
+		background-color: #fff;
+		color: gray;
+		font-weight: bold;
+		cursor: pointer;
+	}
+
+	.rotatewheel: active {
+		width: 90px;
+		height: 90px;
+		font-size: 20px;
 	}
 }

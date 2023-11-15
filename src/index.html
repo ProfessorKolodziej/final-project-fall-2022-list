@@ -6,19 +6,49 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Update your description here" />
-	<title>Update your title here</title>
-	<!--
-		This is where you should link your CSS file.
-	-->
+	<title>Blucket List</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-	<main class="content-container">
-		<h1>Welcome to your final project!</h1>
-	</main>
+	<h1> Bucket Lists</h1>
 	<!--
 		This is where you should link your JS file.
 	-->
+
+	<div class="wheel">
+		<div class="S1" id="sa">
+			<div class="a1">
+				<span class="spa"><strong>TAKE A ROAD TRIP
+					</strong></span>
+				<span class="spb"><strong>VOLUNTEER
+					</strong></span>
+				<span class="spc"></span><strong>SKYDIVE</strong></span>
+				<span class="spd"><strong>CAMPING</strong></span>
+			</div>
+			<div class="S2">
+				<span class="spa"><strong>TRAVEL SOLO</strong></span>
+				<span class="spb"><strong>BE LAZY</strong></span>
+				<span class="spc"><strong>DRINK BEER</strong></span>
+				<span class="spd"><strong>ZIPLINE</strong></span>
+			</div>
+		</div>
+	</div>
+
+	<button class="rotatewheel" onclick="magicwheel()"> Rotate</button>
+
+
+	<script>
+		function magicwheel() {
+			var x = 1024;
+			var b = 9999;
+			var dgre = Math.floor(Math.random() * (x - b)) + y;
+			document.getElementById(* sa *).style.transform = "rotate(" + deg + "deg)";
+		}
+
+	</script>
+
+
 </body>
 
 </html>
