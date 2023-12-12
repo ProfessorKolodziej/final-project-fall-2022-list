@@ -86,10 +86,11 @@ body {
     font-size: 15px;
 }
 
-/* popup window */
+
 .window_bg {
     display: none;
     position: fixed;
+
     left: 0;
     top: 0;
     width: 100%;
@@ -380,39 +381,59 @@ body {
     }
 }
 
-
 #container {
     position: relative;
     height: 100%;
     width: 100%;
-    background-image: url('../img/main_bg.png');
+    background-image: url('../img/bg2.png');
     background-size: 100% 100%;
     background-attachment: fixed;
     overflow-x: hidden;
     overflow-y: auto;
 }
 
-.fir_title {
-    font-size: 6em;
-    color: #c29b58;
-    font-family: 'Comforter';
-}
-
 .sub_title {
     font-size: 2.4em;
     color: #000;
     font-family: 'Neucha';
+    letter-spacing: 4px;
 }
 
 .main_cont {
-    padding-top: 10vh;
     max-width: 1140px;
     flex-direction: column;
-    width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-bottom: 20px;
+    padding: 20px;
+    font-family: 'Neucha';
+    font-size: 2rem;
+}
 
+.list_item {
+    margin-bottom: 20px;
+}
+
+.list_title {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.list_img {
+    width: 36%;
+    height: auto;
+    background-size: cover;
+    display: inline-block;
+}
+
+.list_tpic {
+    margin-left: 30px;
+    display: inline-block;
+    width: 54%;
+    padding-top: 40px;
+}
+
+.yellow_link {
+    color: #BB8F0D;
 }
 
 @media screen and (max-width:749px) {
@@ -420,22 +441,60 @@ body {
         background-image: url('../img/bg3.png') !important;
     }
 
-    .fir_title {
-        font-size: 3.4em !important;
-        font-weight: normal;
-        padding: 0 10px;
-    }
-
-    .sub_title {
-        font-size: 1.8em;
-        padding: 0 20px;
-        font-weight: normal;
-    }
-
     .main_top {
         padding-top: 0;
     }
 
+    .main_footer {
+        display: none;
+    }
+
+    .sub_title {
+        font-size: 1.3em;
+        padding: 0 20px;
+        font-weight: bold;
+    }
+
+    .main_cont {
+        font-size: 1.1em;
+        padding-top: 0;
+    }
+
+    .list_title {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .list_tpic {
+        margin-left: 10px;
+        width: 56%;
+        padding-top: 0;
+    }
+
+    .list_img {
+        width: 40%;
+        height: 100%;
+    }
+
+    .list_img1 {
+        background-image: url('../img/mo_123.png');
+    }
+
+    .list_img2 {
+        background-image: url('../img/mo_craft.png');
+    }
+
+    .list_img5 {
+        background-image: url('../img/mo_house.png');
+    }
+
+    .list_img6 {
+        background-image: url('../img/mo_is.png');
+    }
+
+    .list_img15 {
+        background-image: url('../img/mo_donate.png');
+    }
 }
 
 @media screen and (min-width:750px) {

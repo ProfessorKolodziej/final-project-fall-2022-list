@@ -86,7 +86,7 @@ body {
     font-size: 15px;
 }
 
-/* popup window */
+/* popup */
 .window_bg {
     display: none;
     position: fixed;
@@ -385,34 +385,96 @@ body {
     position: relative;
     height: 100%;
     width: 100%;
-    background-image: url('../img/main_bg.png');
+    background-image: url('../img/bg2.png');
     background-size: 100% 100%;
     background-attachment: fixed;
     overflow-x: hidden;
     overflow-y: auto;
 }
 
-.fir_title {
-    font-size: 6em;
-    color: #c29b58;
-    font-family: 'Comforter';
-}
-
-.sub_title {
-    font-size: 2.4em;
-    color: #000;
-    font-family: 'Neucha';
-}
-
 .main_cont {
-    padding-top: 10vh;
     max-width: 1140px;
-    flex-direction: column;
-    width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-bottom: 20px;
+    margin-top: 5vh;
+    padding: 0 20px;
+}
 
+.mobile_main_cont {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    padding: 0 30px;
+}
+
+.main_item {
+    margin-bottom: 30px;
+    font-family: Neucha;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_item>div {
+    width: 25%;
+}
+
+.img_item {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+.mobile_img_item {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    margin-bottom: 6px;
+}
+
+.mobile_item_name {
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    position: relative;
+    font-size: 12px;
+}
+
+input[type=checkbox]::after {
+    position: absolute;
+    top: 0;
+    color: #000;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    visibility: visible;
+    padding-left: 0;
+    text-align: center;
+    content: ' ';
+    border-radius: 0.3rem;
+}
+
+input[type=checkbox]:checked::after {
+    content: "✓";
+    color: #fff;
+    font-size: 10px;
+    background-color: #7648FF;
+}
+
+.sel_y_title {
+    color: #c29b58;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.light16 {
+    width: 110px !important;
 }
 
 @media screen and (max-width:749px) {
@@ -420,26 +482,29 @@ body {
         background-image: url('../img/bg3.png') !important;
     }
 
-    .fir_title {
-        font-size: 3.4em !important;
-        font-weight: normal;
-        padding: 0 10px;
-    }
-
-    .sub_title {
-        font-size: 1.8em;
-        padding: 0 20px;
-        font-weight: normal;
-    }
-
     .main_top {
         padding-top: 0;
     }
 
+    .main_cont {
+        display: none;
+    }
+
+    .mobile_main_cont {
+        display: block;
+    }
 }
 
 @media screen and (min-width:750px) {
     .main_top {
         padding-top: 20px;
+    }
+
+    .main_cont {
+        display: block;
+    }
+
+    .mobile_main_cont {
+        display: none;
     }
 }
