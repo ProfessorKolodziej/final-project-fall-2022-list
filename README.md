@@ -2,13 +2,18 @@
 
 ## Description
 
-Please add a brief description of your final project here.
+My Christmas bucket list is designed for anyone seeking to make the most of the festive season by engaging in a variety of activities that capture the spirit of Christmas. The target audience includes people of all ages who are looking to create special memories and fully immerse themselves in the joy. Thus, I designed a list from classic activities like baking holiday cookies and eat a candy cane to more unique pursuits like crafting handmade ornaments. 
 
 ## Project Documentation
 
 - [CM523 Final Project Guidelines &amp; Schedule](https://docs.google.com/document/d/1gvG9_1XYfp5-BVUgCDL9JDaZ3Acm6hHP7lDF3MqXPzY/edit#heading=h.61wsleacz62i)
-- **Final code demo:** [Update this to show your Github Pages URL](https://professorkolodziej.github.io/cm523-final-project/). The URL will be `https://professorkolodziej.github.io/YOUR-REPOSITORY-NAME/`.
+- **Final code demo:** [Update this to show your Github Pages URL](https://github.com/ProfessorKolodziej/final-project-fall-2022-list). The URL will be `https://professorkolodziej.github.io/YOUR-REPOSITORY-NAME/`.
 - Add any links to wireframes, mockups, your presentation, etc. here in a list so it is easy for you to find later.
+
+https://www.figma.com/file/Qb2UXE0kCRILO9bb2iHbKp/Decision-Maker?type=design&node-id=139%3A170&mode=design&t=OhoX5PJGZgRtwNgJ-1
+https://www.canva.com/design/DAF2z9oSFG4/b3-Ob3Rwr-TCY1nvW0T6oA/edit
+https://github.com/ProfessorKolodziej/final-project-fall-2022-list
+
 
 ## How to Use This Repository
 
