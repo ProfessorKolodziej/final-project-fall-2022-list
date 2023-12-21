@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet" />
+  <link href="css/wheel.css" rel="stylesheet" />
   <title>Christmas Bucket List</title>
 </head>
 
@@ -85,26 +85,55 @@
         </div>
       </div>
     </div>
+
+    <div class="mobile_menu pr">
+      <img class="menu_img" src="img/menu.png" id="bindleMenu" />
+      <div class="menu_tab pa" id="showMobileMenu">
+        <div class="mobile_select_ul">
+          <div>
+            <a href="index.html"><img class="mobile_star_img" src="img/star.png" /></a>
+          </div>
+          <div class="mobile_li"><a href="index.html">Home</a></div>
+          <div class="mobile_li"><a href="content.html">List Ideas</a></div>
+          <div class="mobile_li"><a href="wheel.html">List Selector</a></div>
+          <div class="mobile_li"><a href="bucket.html">Bucket List</a></div>
+        </div>
+      </div>
+    </div>
+
     <div class="main_cont tc">
-      <h1 class="fir_title">Chirstmas Bucket List</h1>
-      <h1 class="sub_title">Jingle All the Tasks: Making Memories Merry and Bright!</h1>
+      <h1 class="m_title">Let the Spin Wheel Pick up an Event for You!</h1>
+      <div class="wheel">
+        <canvas id="wheelCanvas"></canvas>
+        <button type="button" class="pointer pointer-animation" id="getAward"></button>
+      </div>
     </div>
     <div class="main_footer tc">
       <div class="select_ul">
-        <div class="select_li activeLi"><a href="index.html">Home</a></div>
-        <div class="select_li"><a href="content.html">List Ideas</a></div>
-        <div class="select_li"><a href="wheel.html">List Selector</a></div>
-        <div class="select_li"><a href="bucket.html">Bucket List</a></div>
-      </div>
-      <div class="mobile_select_ul" style="display: none;">
-        <a href="index.html"><img class="star_img" src="img/star.png"></a>
         <div class="select_li"><a href="index.html">Home</a></div>
         <div class="select_li"><a href="content.html">List Ideas</a></div>
-        <div class="select_li"><a href="wheel.html">List Selector</a></div>
+        <div class="select_li activeLi">
+          <a href="wheel.html">List Selector</a>
+        </div>
         <div class="select_li"><a href="bucket.html">Bucket List</a></div>
+      </div>
+    </div>
+
+    <div class="window_bg">
+      <div class="window_content minH200">
+        <div class="window_title gr_bg">
+          <span class="sel_g_title">Give it a Shot!</span>
+          <svg id="closeSvgId" class="closeSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <polygon fill="var(--ci-primary-color, currentColor)"
+              points="427.314 107.313 404.686 84.687 256 233.373 107.314 84.687 84.686 107.313 233.373 256 84.686 404.687 107.314 427.313 256 278.627 404.686 427.313 427.314 404.687 278.627 256 427.314 107.313"
+              class="ci-primary" />
+          </svg>
+        </div>
+        <div class="window_text"></div>
       </div>
     </div>
   </div>
 </body>
+<script src="js/scripts.js" type="text/javascript"></script>
 
 </html>
